@@ -1,0 +1,21 @@
+
+Print
+	scrot /home/ptrixi/Pictures/screenshots/screenshot.png
+
+super + Print
+	scrot --select --line mode=edge /home/ptrixi/Pictures/screenshots/screenshot.png
+
+XF86MonBrightnessUp
+	light -A 5 &
+
+XF86MonBrightnessDown
+	light -U 5 &
+
+super + space
+	bash /home/ptrixi/.scripts/keylayout.sh
+
+XF86AudioLowerVolume
+	/home/ptrixi/.scripts/audio-change-update-volume.sh lower &
+
+XF86AudioRaiseVolume 
+	/home/ptrixi/.scripts/audio-change-update-volume.sh raise & 
