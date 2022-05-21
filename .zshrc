@@ -7,7 +7,6 @@ alias ls="ls --color=auto"
 alias passgen="bash /home/ptrixi/bash-projects/passwordgen.sh"
 alias weather="curl wttr.in"
 alias battery="upower -i `upower -e | grep 'BAT'`"
-alias dotfiles='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 
 # LS_COLORS="di=36:fi=0:ln=34:pi=5:so=5:bd=5:cd=5:or=31"
 LS_COLORS="fi=00:di=36:ln=34:pi=33:so=35:bd=31:*.png=34:*.jpg=34:*.jpeg=34:*.mkv=35:*.mp4=35:*.mp3=35:*.deb=31:*.tar=31:*.zip=31:"

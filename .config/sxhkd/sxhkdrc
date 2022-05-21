@@ -14,8 +14,5 @@ XF86MonBrightnessDown
 super + space
 	bash /home/ptrixi/.scripts/keylayout.sh
 
-XF86AudioLowerVolume
-	/home/ptrixi/.scripts/audio-change-update-volume.sh lower &
-
-XF86AudioRaiseVolume 
-	/home/ptrixi/.scripts/audio-change-update-volume.sh raise & 
+XF86Audio{RaiseVolume,LowerVolume,Mute}
+	pamixer -{i,d,t} 2; kill -34 $(cat ~/.cache/pidofbar)
